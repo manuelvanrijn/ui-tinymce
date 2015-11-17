@@ -154,6 +154,7 @@ angular.module('ui.tinymce', [])
             clonedElement.removeAttr('aria-hidden');
             tinymce.execCommand('mceRemoveEditor', false, eid);
             parentElement.append($compile(clonedElement)(scope));
+            element.destroy()
           }
         });
 
